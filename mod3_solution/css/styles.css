@@ -1,0 +1,133 @@
+body {
+  font-size: 16px;
+  color: #0f0352;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** Header **/
+#header-nav {
+  background-color: #0f0352;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  height: 70px;
+  padding-left: 45px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1.5px; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list a {
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 15px;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+  color: black;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  background-color: #ffffff;
+  border: 1.5px solid #4b1b4a;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -55px;
+}
+/** End Header **/
+/** Main Content **/
+#main-content {
+  margin: -20px auto 0;
+  width: 95%;
+  font-size: 0.9em;
+}
+#main-content h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+.menu-item {
+  background-color: #e8e8e8;
+}
+.menu-item h3 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.menu-item p {
+  line-height: 125%;
+  padding: 0 5px 20px;
+}
+/** End Main Content **/
+
+/** Desktop only **/
+@media (min-width: 992px) {
+
+}
+
+/** Tablet only **/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  
+  /* End Header */
+  /** Main Content **/
+  #main-content {
+    font-size: 1em;
+    width: 80%;
+  }
+  #main-content h2 {
+    font-size: 2em;
+  }
+  #main-content h3 {
+    font-size: 1.5em;
+  }
+  .menu-item p {
+    line-height: 150%;
+    padding: 0 15px 20px;
+  }
+  /** End Main Content **/
+}
+
+/** Mobile only **/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 5px;
+    height: 70px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  
+  /* End Header */
+  /** Main Content **/
+  #main-content {
+    font-size: 1em;
+    width: 80%;
+  }
+  .menu-item h3 {
+    margin-top: 10px;
+  }
+  .menu-item p {
+    font-size: 0.6;
+    line-height: 150%;
+    padding: 0 15px 20px;
+  }
+  /** End Main Content **/
+}
